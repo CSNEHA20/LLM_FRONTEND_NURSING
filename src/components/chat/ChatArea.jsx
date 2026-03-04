@@ -63,8 +63,8 @@ export default function ChatArea() {
     return (
         <div className="flex-1 flex flex-col bg-[#F7F9FB] relative overflow-hidden">
             {/* Scrollable Message History */}
-            <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6 md:px-8 custom-scrollbar">
-                <div className="max-w-4xl mx-auto space-y-6">
+            <div className="flex-1 overflow-y-auto px-4 sm:px-6 md:px-8 py-6 custom-scrollbar">
+                <div className="w-full space-y-6">
                     {messages.map((msg) => (
                         <MessageBubble key={msg.id} message={msg} />
                     ))}
