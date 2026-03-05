@@ -17,11 +17,11 @@ export default function ChatMessage({ messageText, senderType }) {
                 {/* Avatar */}
                 <div className="flex-shrink-0 mt-1">
                     {isUser ? (
-                        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shadow-sm">
+                        <div className="w-8 h-8 rounded-full bg-[#f0dae0] flex items-center justify-center text-[#b1103e] shadow-sm">
                             <User size={16} />
                         </div>
                     ) : (
-                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white shadow-sm">
+                        <div className="w-8 h-8 rounded-full bg-[#b1103e] flex items-center justify-center text-white shadow-sm">
                             <Sparkles size={16} />
                         </div>
                     )}
@@ -31,8 +31,8 @@ export default function ChatMessage({ messageText, senderType }) {
                 <div className={cn(
                     "px-5 py-3.5 rounded-2xl bubble-shadow text-[15px] leading-relaxed",
                     isUser
-                        ? "bg-primary/15 text-text_primary rounded-tr-sm"
-                        : "bg-white border border-primary/10 text-text_primary rounded-tl-sm"
+                        ? "bg-[#b1103e] text-white rounded-tr-sm"
+                        : "bg-[#e58ea8] border border-primary/10 text-[#111827] rounded-tl-sm"
                 )}>
                     {messageText}
                 </div>

@@ -21,21 +21,23 @@ export default function Sidebar() {
     const filteredChats = recentChats.filter(c => c.title.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return (
-        <div className="w-[280px] bg-secondary flex-shrink-0 flex flex-col h-full text-white/90 shadow-lg z-20">
+        <div className="w-[280px] flex-shrink-0 flex flex-col h-full text-white/90 shadow-lg z-20" style={{ background: 'linear-gradient(135deg, #b30f3d 0%, #111827 100%)' }}>
             {/* Logo Area */}
-            <div className="p-5 flex items-center gap-3 border-b border-white/10">
-                <div className="bg-primary p-2 rounded-lg flex-shrink-0">
-                    <BookOpen size={20} className="text-white" />
+            {/* Section 1: attach logo and project section with different shade */}
+            <div className="flex h-[81px] items-center gap-3 px-5 border-b border-black/10 bg-[#8c0d31] shadow-lg relative z-10">
+                <div className="bg-white/10 p-1 rounded-lg flex-shrink-0 w-10 h-10 flex items-center justify-center overflow-hidden">
+                    <img src="/logo.png" alt="Tamil Nadu Nurses Council Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col">
                     <span className="font-bold text-[15px] tracking-tight text-white leading-tight">Nursing AI</span>
-                    <span className="text-xs text-secondary-foreground text-primary/80 font-medium">RAG Learning Platform</span>
+                    <span className="text-xs text-white/80 font-medium">RAG Learning Platform</span>
                 </div>
             </div>
 
             {/* New Chat Button */}
             <div className="p-4 pb-2">
-                <button className="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white py-3 px-4 rounded-xl transition-colors font-medium text-sm shadow-md">
+                {/* Section 2: Instead of Green change to pink shade (#b1103e), font white */}
+                <button className="w-full flex items-center justify-center gap-2 bg-[#b1103e] hover:bg-[#8c0d31] text-white py-3 px-4 rounded-xl transition-colors font-medium text-sm shadow-md">
                     <Plus size={18} />
                     New Chat
                 </button>
@@ -49,7 +51,7 @@ export default function Sidebar() {
                         className="flex items-center justify-between px-2 mb-2 cursor-pointer group"
                         onClick={() => setProjectsOpen(!projectsOpen)}
                     >
-                        <h3 className="text-xs font-semibold text-white/50 uppercase tracking-wider flex items-center gap-2 group-hover:text-white/70 transition-colors">
+                        <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider flex items-center gap-2 group-hover:text-white transition-colors">
                             <Folder size={14} /> Projects / Lessons
                         </h3>
                         <div className="flex items-center gap-1">
@@ -71,7 +73,7 @@ export default function Sidebar() {
                             {projects.map(p => (
                                 <div key={p.id} className="group flex items-center justify-between px-3 py-2 text-sm text-white/80 hover:bg-white/10 rounded-lg transition-colors cursor-pointer">
                                     <div className="flex items-center gap-2.5 truncate">
-                                        <div className="w-2 h-2 rounded-full bg-primary/80 flex-shrink-0"></div>
+                                        <div className="w-2 h-2 rounded-full bg-white/80 flex-shrink-0"></div>
                                         <span className="truncate">{p.name}</span>
                                     </div>
                                     <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -89,7 +91,7 @@ export default function Sidebar() {
                 {/* Recent Chats Section */}
                 <div>
                     <div className="px-2 mb-3">
-                        <h3 className="text-xs font-semibold text-white/50 uppercase tracking-wider flex items-center gap-2 mb-2">
+                        <h3 className="text-xs font-semibold text-white/90 uppercase tracking-wider flex items-center gap-2 mb-2">
                             <MessageSquare size={14} /> Recent Chats
                         </h3>
                         {/* Search History */}
@@ -126,9 +128,10 @@ export default function Sidebar() {
             </div>
 
             {/* Bottom Profile / Settings Area */}
+            {/* Section 5: Remove green icons completely and add appropriate white icons */}
             <div className="p-3 border-t border-white/10 mt-auto bg-black/10">
                 <button className="flex items-center gap-3 w-full px-3 py-2.5 text-sm hover:bg-white/10 rounded-xl transition-colors text-white/80 hover:text-white group">
-                    <div className="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white/30 transition-colors">
                         <Settings size={14} />
                     </div>
                     <div className="flex flex-col items-start flex-1 truncate">

@@ -18,11 +18,11 @@ export default function MessageBubble({ message }) {
                 {/* Avatar */}
                 <div className="flex-shrink-0 mt-1">
                     {isUser ? (
-                        <div className="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 border border-indigo-200 shadow-sm">
+                        <div className="w-8 h-8 rounded-full bg-[#f0dae0] flex items-center justify-center text-[#b1103e] shadow-sm">
                             <User size={16} />
                         </div>
                     ) : (
-                        <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white shadow-sm">
+                        <div className="w-8 h-8 rounded-full bg-[#b1103e] flex items-center justify-center text-white shadow-sm">
                             <Sparkles size={16} />
                         </div>
                     )}
@@ -32,8 +32,8 @@ export default function MessageBubble({ message }) {
                 <div className={cn(
                     "px-5 py-3.5 rounded-2xl shadow-sm text-[15px] leading-relaxed",
                     isUser
-                        ? "bg-gray-100 text-text_primary rounded-tr-sm"
-                        : "bg-transparent border-none text-text_primary rounded-tl-sm px-0 py-1 shadow-none"
+                        ? "bg-[#b1103e] text-white rounded-tr-sm"
+                        : "bg-[#e58ea8] border border-primary/10 text-[#111827] rounded-tl-sm"
                 )}>
                     {/* Use pre-wrap to respect newlines but don't break simple markdown completely */}
                     <div className="whitespace-pre-wrap">

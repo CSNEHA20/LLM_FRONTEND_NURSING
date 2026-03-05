@@ -12,7 +12,7 @@
 .login-left-panel {
     width: 50%;
     /* Primary color background with a subtle gradient for modern SaaS look */
-    background: linear-gradient(135deg, #102e6e 0%, #111827 100%);
+    background: linear-gradient(135deg, #b30f3d 0%, #111827 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .login-title {
-    font-size: 33px;
+    font-size: 1.85rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -78,8 +78,8 @@
     margin-right: 0.75rem;
     width: 1.25rem;
     height: 1.25rem;
-    color: #60a5fa;
-    /* Tailwind blue-400 for contrast */
+    /* Industry standard check color using the background palette pink shade */
+    color: #f0dae0;
 }
 
 .illustration-placeholder {
@@ -106,7 +106,7 @@
 /* Right Login Panel */
 .login-right-panel {
     width: 50%;
-    background-color: #ffffff;
+    background-color: #f0dae0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +123,8 @@
 .card-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #111827;
+    /* Changed to match the red accent already in the login page */
+    color: #b1103e;
     margin-bottom: 12px;
 }
 
@@ -162,8 +163,8 @@
 
 .input-field:focus {
     outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    border-color: #b1103e;
+    box-shadow: 0 0 0 3px rgba(255, 45, 30, 0.1);
 }
 
 .input-field::placeholder {
@@ -174,8 +175,8 @@
 .primary-button {
     width: 100%;
     padding: 0.6rem 0.8rem;
-    background-color: #2563eb;
-    /* Primary blue */
+    background-color: #b1103e;
+    /* Primary brand color */
     color: #ffffff;
     border: none;
     border-radius: 0.5rem;
@@ -188,9 +189,9 @@
 }
 
 .primary-button:hover {
-    background-color: #1d4ed8;
+    background-color: #d60e00;
     transform: translateY(-1px);
-    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 6px -1px #b1103e(255, 45, 30, 0.2);
 }
 
 .primary-button:active {
@@ -264,7 +265,7 @@
 }
 
 .text-link a {
-    color: #2563eb;
+    color: #b1103e;
     text-decoration: none;
     font-weight: 500;
 }

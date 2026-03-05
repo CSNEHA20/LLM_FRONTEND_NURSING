@@ -61,7 +61,7 @@ export default function ChatArea() {
     };
 
     return (
-        <div className="flex-1 flex flex-col bg-[#F7F9FB] relative overflow-hidden">
+        <div className="flex-1 flex flex-col bg-background relative overflow-hidden">
             {/* Scrollable Message History */}
             <div className="flex-1 overflow-y-auto px-4 sm:px-6 md:px-8 py-6 custom-scrollbar">
                 <div className="w-full space-y-6">
@@ -74,16 +74,16 @@ export default function ChatArea() {
                         <div className="flex justify-start">
                             <div className="flex max-w-[85%] sm:max-w-[75%] gap-4 flex-row">
                                 <div className="flex-shrink-0 mt-1">
-                                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white shadow-sm">
+                                    <div className="w-8 h-8 rounded-full bg-[#b1103e] flex items-center justify-center text-white shadow-sm">
                                         <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce"></div>
                                         <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce delay-100 mx-0.5"></div>
                                         <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce delay-200"></div>
                                     </div>
                                 </div>
-                                <div className="px-5 py-3.5 rounded-2xl shadow-sm bg-surface border border-gray-100 text-text_primary rounded-tl-sm flex items-center space-x-2 w-24">
-                                    <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse"></div>
-                                    <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse delay-150"></div>
-                                    <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse delay-300"></div>
+                                <div className="px-5 py-3.5 rounded-2xl shadow-sm bg-[#e58ea8] border border-[#b1103e]/10 text-text_primary rounded-tl-sm flex items-center space-x-2 w-24">
+                                    <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse"></div>
+                                    <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse delay-150"></div>
+                                    <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse delay-300"></div>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ export default function ChatArea() {
             </div>
 
             {/* Input Area */}
-            <div className="w-full bg-gradient-to-t from-[#F7F9FB] via-[#F7F9FB] to-transparent pt-6 pb-6 px-4">
+            <div className="w-full bg-gradient-to-t from-background via-background to-transparent pt-6 pb-6 px-4">
                 <div className="max-w-4xl mx-auto">
                     {messages.length <= 3 && !isTyping && (
                         <SuggestedPrompts onSelectPrompt={handleSendMessage} />

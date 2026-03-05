@@ -23,7 +23,7 @@ export default function ChatInput({ onSend }) {
         <div className="w-full max-w-4xl mx-auto px-4 sm:px-6">
             <form
                 onSubmit={handleSubmit}
-                className="relative flex flex-col w-full rounded-2xl border border-primary/20 bg-white shadow-sm focus-within:ring-1 focus-within:ring-primary/30 focus-within:border-primary/40 transition-shadow transition-colors"
+                className="relative flex flex-col w-full rounded-2xl border border-[#b1103e]/20 bg-white shadow-md hover:shadow-lg focus-within:shadow-lg focus-within:ring-1 focus-within:ring-[#b1103e]/30 focus-within:border-[#b1103e]/40 transition-shadow transition-colors"
             >
                 <div className="flex-1 max-h-48 overflow-y-auto w-full">
                     <textarea
@@ -43,21 +43,21 @@ export default function ChatInput({ onSend }) {
                     <div className="flex items-center gap-1">
                         <button
                             type="button"
-                            className="p-2 text-text_secondary/80 hover:text-primary transition-colors rounded-xl flex items-center justify-center hover:bg-gray-100"
+                            className="p-2 text-[#b1103e]/70 hover:text-[#b1103e] transition-colors rounded-xl flex items-center justify-center hover:bg-gray-100"
                             title="Add Media"
                         >
                             <Plus size={20} strokeWidth={2.5} />
                         </button>
                         <button
                             type="button"
-                            className="p-2 text-text_secondary/80 hover:text-primary transition-colors rounded-xl items-center justify-center hover:bg-gray-100 hidden sm:flex"
+                            className="p-2 text-[#b1103e]/70 hover:text-[#b1103e] transition-colors rounded-xl items-center justify-center hover:bg-gray-100 hidden sm:flex"
                             title="Upload Image"
                         >
                             <ImageIcon size={18} strokeWidth={2} />
                         </button>
                         <button
                             type="button"
-                            className="p-2 text-text_secondary/80 hover:text-primary transition-colors rounded-xl items-center justify-center hover:bg-gray-100 hidden sm:flex"
+                            className="p-2 text-[#b1103e]/70 hover:text-[#b1103e] transition-colors rounded-xl items-center justify-center hover:bg-gray-100 hidden sm:flex"
                             title="Voice Note"
                         >
                             <FileAudio size={18} strokeWidth={2} />
@@ -68,7 +68,7 @@ export default function ChatInput({ onSend }) {
                     <div className="flex items-center gap-1">
                         <button
                             type="button"
-                            className="p-2 text-text_secondary/80 hover:text-primary transition-colors rounded-xl flex items-center justify-center hover:bg-gray-100"
+                            className="p-2 text-[#b1103e]/70 hover:text-[#b1103e] transition-colors rounded-xl flex items-center justify-center hover:bg-gray-100"
                             title="Voice Recognition"
                         >
                             <Mic size={18} strokeWidth={2} />
@@ -76,7 +76,7 @@ export default function ChatInput({ onSend }) {
                         <button
                             type="submit"
                             disabled={!inputValue.trim()}
-                            className="p-2 bg-primary text-white rounded-xl disabled:opacity-50 disabled:bg-primary/60 hover:bg-primary/90 transition-all flex items-center justify-center ml-1"
+                            className="p-2 bg-[#8c0d31] text-white rounded-xl disabled:opacity-50 disabled:bg-[#8c0d31]/60 hover:bg-[#6a0824] transition-all flex items-center justify-center ml-1"
                         >
                             <Send size={16} className="ml-0.5" strokeWidth={2.5} />
                         </button>

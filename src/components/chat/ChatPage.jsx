@@ -74,16 +74,16 @@ export default function ChatPage() {
                 <div className="w-full flex py-4 px-4 sm:px-6 md:px-8 justify-start">
                     <div className="flex max-w-[85%] sm:max-w-[70%] gap-4 flex-row">
                         <div className="flex-shrink-0 mt-1">
-                            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white shadow-sm">
+                            <div className="w-8 h-8 rounded-full bg-[#b1103e] flex items-center justify-center text-white shadow-sm">
                                 <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce"></div>
                                 <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce delay-100 mx-0.5"></div>
                                 <div className="w-1.5 h-1.5 bg-white rounded-full animate-bounce delay-200"></div>
                             </div>
                         </div>
-                        <div className="px-5 py-3.5 rounded-2xl bubble-shadow bg-surface border border-primary/10 text-text_primary rounded-tl-sm flex items-center space-x-2 w-24">
-                            <div className="w-2 h-2 bg-primary/40 rounded-full animate-pulse"></div>
-                            <div className="w-2 h-2 bg-primary/40 rounded-full animate-pulse delay-150"></div>
-                            <div className="w-2 h-2 bg-primary/40 rounded-full animate-pulse delay-300"></div>
+                        <div className="px-5 py-3.5 rounded-2xl bubble-shadow bg-[#e58ea8] border border-[#b1103e]/10 text-text_primary rounded-tl-sm flex items-center space-x-2 w-24">
+                            <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse"></div>
+                            <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse delay-150"></div>
+                            <div className="w-2 h-2 bg-white/60 rounded-full animate-pulse delay-300"></div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,6 @@ export default function ChatPage() {
 
     return (
         <ChatLayout
-            headerTitle="Nursing AI Assistant"
             messagesArea={messagesArea}
             inputArea={inputArea}
         />
