@@ -76,7 +76,7 @@ export default function ChatInput({ onSend }) {
                         <button
                             type="submit"
                             disabled={!inputValue.trim()}
-                            className="p-2 bg-[#8c0d31] text-white rounded-xl disabled:opacity-50 disabled:bg-[#8c0d31]/60 hover:bg-[#6a0824] transition-all flex items-center justify-center ml-1"
+                            className="p-2 bg-[#a01f36] text-white rounded-xl disabled:opacity-50 disabled:bg-[#a01f36]/60 hover:bg-[#7a0517] transition-all flex items-center justify-center ml-1"
                         >
                             <Send size={16} className="ml-0.5" strokeWidth={2.5} />
                         </button>
